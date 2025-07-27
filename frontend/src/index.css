@@ -1,0 +1,93 @@
+/* Basic body and font styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main App container styling */
+#root {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh; /* Ensures it takes full viewport height */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.App {
+  width: 100%;
+  max-width: 900px; /* Wider content area for charts */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.App-header {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.App-header h1 {
+  font-size: 2.5em;
+  color: #2c3e50; /* Darker blue-gray */
+  margin-bottom: 10px;
+}
+
+.App-header p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Dropdown styling */
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+select {
+  appearance: none; /* Remove default arrow */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+select:focus {
+  border-color: #007bff; /* Blue focus border */
+}
+
+/* Chart container styling (added in App.js directly but can be enhanced here) */
+.App main > div > div { /* Targets the div wrapping each chart */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Lighter shadow for individual cards */
+    padding: 25px;
+    margin-bottom: 30px; /* Space between charts */
+}
+
+.App main > div > div h2 {
+    text-align: center;
+    color: #34495e;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* No data message styling */
+.App main p {
+  color: #777;
+  font-style: italic;
+}
